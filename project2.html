@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+    <a href="our.html">our Team</a>
+</li>
+    
+</ul>
+</nav>
+    <main>
+        <header>
+            <h1>Temperature Converter</h1>
+        </header>
+        <div class="inputs">
+            <input type="number" name="celcius" id="celcius" class="input" placeholder="Celcius">
+            <input type="number" name="fahrenheit" id="fahrenheit" class="input" placeholder="Fahrenheit">
+            <input type="number" name="kelvin" id="kelvin" class="input" placeholder="Kelvin">
+        </div>
+    </main>
+<script>
+   celciusInput = document.getElementById("celcius");
+ fahrenheitInput = document.getElementById("fahrenheit");
+ kelvinInput = document.getElementById("kelvin");
+
+
+ inputs = document.getElementsByClassName("input");
+
+for( i=0; i<inputs.length; i++) {
+    let input = inputs[i];
+
+    input.addEventListener("input", function(e) {
+         value = parseFloat(e.target.value);
+
+        switch(e.target.name) {
+            case "celcius":
+                fahrenheitInput.value = (value * 1.8) + 32;
+                kelvinInput.value = value + 273.15;
+                break;
+            case "fahrenheit":
+                celciusInput.value = (value - 32) / 1.8;
+                kelvinInput.value = ((value - 32) / 1.8) + 273.15;
+                break;
+            case "kelvin":
+                celciusInput.value = value - 273.15;
+                fahrenheitInput.value = ((value - 273.15) * 1.8) + 32;
+                break;
+        }
+    });
+}
+</script>
+</body>
+</html>
+    
