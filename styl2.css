@@ -132,6 +132,7 @@ nav ul{
         color: black;
         font-size: 17px;
         text-transform: uppercase;
+		word-spacing: 17%;
     }
     a .active, a:hover{
         background-color: #1b9bff;
