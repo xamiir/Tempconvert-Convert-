@@ -76,7 +76,7 @@
  <br>
  <div style="margin-top: -15px;"> <br>
  <span style="width: fit-content; border: 1px solid #222; font-size: 30px; padding: 5px;" id="span"></span>
-  <input type="text" style="width: 200px; padding-top: 10px;" id="captcha">  
+  <input type="text" style="width: 200px; padding-top: 10px;" id="captcha" placeholder="Enter captcha">  
 </div>
  <input type="submit" value="SUBMIT FORM">
  <p>NB inta aadan password gelin iska hubi </p>
@@ -111,7 +111,7 @@
       else
       {
        login_attempts=login_attempts-1;
-       alert("username or password incorrect please try again");
+       alert("username or password or capcha incorrect please try again");
        if(login_attempts==0)
        {
         document.getElementById("name").disabled=true;

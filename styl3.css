@@ -70,6 +70,7 @@ nav{
     margin-top: 10%;
     
     
+    
 }
 nav ul{
     float: right;
@@ -86,6 +87,7 @@ nav ul{
         font-size: 17px;
         text-transform: uppercase;
 		word-spacing: 17%;
+        background-color: #1b9bff;
     }
     a .active, a:hover{
         background-color: #1b9bff;
